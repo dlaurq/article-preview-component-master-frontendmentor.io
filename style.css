@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-blue-700:hsl(217, 19%, 35%);
+    --color-blue-500:hsl(214, 17%, 51%);
+    --color-blue-300:hsl(212, 23%, 69%);
+    --color-blue-100:hsl(210, 46%, 95%);
+    font-size: 13px;
+}
+
