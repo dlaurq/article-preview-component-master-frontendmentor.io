@@ -82,6 +82,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2.4rem;
+    
 }
 
 .user > img{
@@ -94,6 +95,10 @@ body{
     justify-content: space-between;
     align-items: center;
     
+}
+
+.user-img{
+    cursor: pointer;
 }
 
 .user-profile-txt{
@@ -122,10 +127,10 @@ body{
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 2rem;
+    padding: 1.55rem 2.4rem;
     border-radius: 0 0 .7rem .7rem;
     text-align: center;
-    display: none;
+    
 }
 
 .user-share > img{
@@ -150,13 +155,41 @@ body{
     letter-spacing: 5px;
 }
 
+.hide{
+    display: none;
+}
+
+.tri{
+    display: none;
+}
+
+@media (min-width:425px){
+    .container{
+        width: 70%;
+    }
+}
+
+@media (min-width:520px){
+    .container{
+        width: 55%;
+    }
+}
+
+@media (min-width:660px){
+    .container{
+        width: 45%;
+    }
+}
+
 
 @media (min-width: 750px){
     .container{
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
         height: 40vh;
-        width: 80%;
+        width: 90%;
     }
     .container-img{
         background: none;
@@ -171,14 +204,61 @@ body{
 
     .content{
         padding: 1rem 2rem;
-        margin: auto;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        position: relative;
     }
 
     .content-txt{
         padding: 0;
     }
+
     .user{
         padding: 0;
+    }
+
+    .user-share{
+        padding: 1rem 1rem;
+        position: absolute;
+        top: 50%;
+        left: 77%;
+        border-radius: .5rem;
+        width: 12rem;
+    }
+    .user-share > img{
+        display: none;
+    }
+
+    .share-container{
+        justify-content: space-between;
+        width: 100%;
+    }
+    .share-container p{
+        font-size: .8rem;
+        letter-spacing: 3px;
+    }
+
+    .tri{
+        display: block;
+        background-color: var(--color-blue-700);
+        width: 15px;
+        height: 15px;
+        transform: rotate(45deg);
+        position: relative;
+        top: 1.7rem;
+        left: 6.3rem;
+        
+    }
+}
+
+@media (min-width: 785px){
+    .container{
+        width: 80%;
+    }
+    .tri{
+        left: 3.7rem;
     }
 }
 
@@ -188,14 +268,18 @@ body{
     }
 }
 
-@media (min-width: 1100px){
+@media (min-width: 1101px){
     .container{
         width: 60%;
     }
 }
 
+
 @media (min-width: 1300px){
     .container{
         width: 50%;
     }
+    
 }
+
+
