@@ -6,11 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Article preview component</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <div class="container">
-    <img src="" alt="">
+    <div class="container-img">
+      <img src="./images/drawers.jpg" alt="">
+    </div>
     <div class="content">
       <div class="content-txt">
         <h2>
@@ -25,20 +28,23 @@
       </div>
       <div class="user">
         <div class="user-profile">
-          <img src="" alt="">
-        <h3>Michelle Appleton</h3>
-        <p>28 Jun 2020</p>
-        </div>
-        <div class="user-share">
-          <img src="" alt="">
-          <div class="share-container">
-            <p>Share</p>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+          <img src="./images/avatar-michelle.jpg" alt="avatar-michelle">
+          <div class="user-profile-txt">
+            <h3>Michelle Appleton</h3>
+            <p>28 Jun 2020</p>
           </div>
         </div>
+          <img src="./images/icon-share.svg" alt="icon-share" onclick="ShowShareContainer(this)">
       </div>
+        <div class="user-share">
+          <img src="./images/icon-share2.svg" alt="icon-share">
+          <div class="share-container">
+            <p>Share</p>
+            <img src="./images/icon-facebook.svg" alt="icon-facebook">
+            <img src="./images/icon-twitter.svg" alt="icon-twitter">
+            <img src="./images/icon-pinterest.svg" alt="icon-pinterest">
+          </div>
+        </div>
     </div>
   </div>
 </body>
