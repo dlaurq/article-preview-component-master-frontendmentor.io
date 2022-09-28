@@ -208,6 +208,27 @@ body{
     .user{
         padding: 0;
     }
+
+    .user-share{
+        padding: 1rem 1rem;
+        position: absolute;
+        top: 50%;
+        left: 77%;
+        border-radius: .5rem;
+        width: 12rem;
+    }
+    .user-share > img{
+        display: none;
+    }
+
+    .share-container{
+        justify-content: space-between;
+        width: 100%;
+    }
+    .share-container p{
+        font-size: .8rem;
+        letter-spacing: 3px;
+    }
 }
 
 @media (min-width: 785px){
