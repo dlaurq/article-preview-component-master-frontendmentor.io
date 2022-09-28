@@ -84,6 +84,10 @@ body{
     padding: 1rem 2.4rem;
 }
 
+.user > img{
+    cursor: pointer;
+}
+
 .user-profile{
     display: flex;
     flex-direction: row;
